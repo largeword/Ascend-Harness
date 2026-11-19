@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate evidence bookkeeping; does not certify numerical or NPU results."""
+"""Validate standalone evidence bookkeeping, not CANNBot workflow status or acceptance."""
 import argparse
 import json
 from pathlib import Path
@@ -72,7 +72,7 @@ def main():
         errors = [str(exc)]
     for error in errors:
         print('ERROR:', error)
-    print('Evidence bookkeeping: ' + ('FAIL' if errors else 'VALID (not a hardware/quality certification)'))
+    print('Standalone evidence bookkeeping: ' + ('FAIL' if errors else 'VALID (not platform acceptance or hardware/quality certification)'))
     return bool(errors)
 
 

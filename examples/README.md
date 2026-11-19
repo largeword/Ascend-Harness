@@ -1,5 +1,7 @@
 # 示例边界
 
+此处演示独立工程的通用格式。CANNBot 共存时使用平台原生状态与证据，不把本例或 `check_evidence.py` 当作平台验收器；补充记录可使用 `templates/supplement.md`。
+
 `evidence-fixture.json` 仅展示状态组合和工件路径，不代表任何工程验收。它包含一个明确标记为 synthetic 的文件，演示结构检查不能判断工件真实性。采用模板时使用 `templates/evidence.json` 并填入自己的实际结果，不把此 fixture 复制为交付证据。
 
 真实项目可以先只运行主机测试，保存完整日志后将 `host` 改为 `pass`，写明检查范围。其他层级维持实际状态，直到有属于该层的证据；没有设备时不会因主机测试成功而通过 `device`。

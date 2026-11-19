@@ -63,7 +63,7 @@ class ToolsTest(unittest.TestCase):
             self.assertEqual(m.install(target, True, package), 0)
             self.assertEqual((target / 'AGENTS.md').read_text(), 'existing rules')
             (package / 'tools/new.py').write_text('new')
-            (target / '.agents/skills/demo/SKILL.md').write_text('user change')
+            (target / '.harness/skills/demo/SKILL.md').write_text('user change')
             with self.assertRaises(ValueError):
                 m.install(target, True, package)
             self.assertFalse((target / '.harness/tools/new.py').exists())
@@ -76,7 +76,7 @@ class ToolsTest(unittest.TestCase):
             target.mkdir(); external.mkdir()
             (package / 'skills/demo').mkdir(parents=True)
             (package / 'skills/demo/SKILL.md').write_text('skill')
-            (target / '.agents').symlink_to(external, target_is_directory=True)
+            (target / '.harness').symlink_to(external, target_is_directory=True)
             with self.assertRaises(ValueError):
                 m.install(target, True, package)
             self.assertEqual(list(external.iterdir()), [])
