@@ -1,0 +1,4 @@
+SYNTHETIC FORMAT FIXTURE
+This file demonstrates that an evidence artifact can exist at a relative path.
+It is not an actual test log, hardware result, benchmark, or acceptance record.
+Passing schema validation does not authenticate this file's contents.

@@ -1,0 +1,313 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-11-19",
+  "source_repository_label": "new_oscar_ascend",
+  "scope": "all current local heads and refreshed origin branch tips; symbolic origin/HEAD excluded",
+  "local_branch_count": 9,
+  "remote_tracking_branch_count": 8,
+  "unique_tip_count": 9,
+  "branches": [
+    {
+      "ref": "refs/heads/backup/oscar-bf16-attention-before-gitcode-20261109",
+      "commit": "e70d7846dc2396dbeff8049980483ff8504ed8c8",
+      "kind": "local",
+      "tip_group": "e70d7846"
+    },
+    {
+      "ref": "refs/heads/backup/pre-bf16-merge-20261027",
+      "commit": "26cf6dc40ee2182903d176a2fea1cfc41ecb579a",
+      "kind": "local",
+      "tip_group": "26cf6dc4"
+    },
+    {
+      "ref": "refs/heads/checkpoint",
+      "commit": "fdb8eba90522bd8942333bc27472bb3e6808649b",
+      "kind": "local",
+      "tip_group": "fdb8eba9"
+    },
+    {
+      "ref": "refs/heads/codex/add-offload",
+      "commit": "59f08592e59a8e1bfa663d1e45f4f64965e97efa",
+      "kind": "local",
+      "tip_group": "59f08592"
+    },
+    {
+      "ref": "refs/heads/codex/oscar-ascend",
+      "commit": "7047ce36a19e001046a07a7d85de2a4092cd7941",
+      "kind": "local",
+      "tip_group": "7047ce36"
+    },
+    {
+      "ref": "refs/heads/codex/oscar-bf16-attention",
+      "commit": "fdb8eba90522bd8942333bc27472bb3e6808649b",
+      "kind": "local",
+      "tip_group": "fdb8eba9"
+    },
+    {
+      "ref": "refs/heads/codex/oscar-bf16-sink1024-recent2048",
+      "commit": "ea46d233e392930aa6b13513f44db9da8335ada2",
+      "kind": "local",
+      "tip_group": "ea46d233"
+    },
+    {
+      "ref": "refs/heads/codex/oscar-perf-profile",
+      "commit": "fb1a507882009f884ea81ae79e213b49d5ded971",
+      "kind": "local",
+      "tip_group": "fb1a5078"
+    },
+    {
+      "ref": "refs/heads/codex/oscar-sink-recent-sweep",
+      "commit": "e43819c24eb05419f99f394bf38812df10533790",
+      "kind": "local",
+      "tip_group": "e43819c2"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/add-offload",
+      "commit": "59f08592e59a8e1bfa663d1e45f4f64965e97efa",
+      "kind": "remote_tracking",
+      "tip_group": "59f08592"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/aisbench-stable",
+      "commit": "f96820f154f62686c319edba5ac31e52a20bad4e",
+      "kind": "remote_tracking",
+      "tip_group": "f96820f1"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/oscar-ascend",
+      "commit": "7047ce36a19e001046a07a7d85de2a4092cd7941",
+      "kind": "remote_tracking",
+      "tip_group": "7047ce36"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/oscar-bf16-attention",
+      "commit": "fdb8eba90522bd8942333bc27472bb3e6808649b",
+      "kind": "remote_tracking",
+      "tip_group": "fdb8eba9"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/oscar-bf16-sink1024-recent2048",
+      "commit": "ea46d233e392930aa6b13513f44db9da8335ada2",
+      "kind": "remote_tracking",
+      "tip_group": "ea46d233"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/oscar-perf-profile",
+      "commit": "fb1a507882009f884ea81ae79e213b49d5ded971",
+      "kind": "remote_tracking",
+      "tip_group": "fb1a5078"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/oscar-sink-recent-sweep",
+      "commit": "e43819c24eb05419f99f394bf38812df10533790",
+      "kind": "remote_tracking",
+      "tip_group": "e43819c2"
+    },
+    {
+      "ref": "refs/remotes/origin/data-exchange",
+      "commit": "fdb8eba90522bd8942333bc27472bb3e6808649b",
+      "kind": "remote_tracking",
+      "tip_group": "fdb8eba9"
+    }
+  ],
+  "tips": [
+    {
+      "commit": "e70d7846dc2396dbeff8049980483ff8504ed8c8",
+      "refs": [
+        "refs/heads/backup/oscar-bf16-attention-before-gitcode-20261109"
+      ],
+      "lesson_focus": "历史备份：BF16 合同、诊断与生产测量隔离，截止该 tip 的精度/性能边界。",
+      "entry_blob_ids": {
+        "AGENTS.md": "2b595eb2655ec24fcaeca6ed9317d8d1e2d4282b",
+        "oscar_ascend_agent_start.md": "a9e0e3cf010b76bd71bd24bdc9c9ba1531363421",
+        "skills/oscar-quant-optimization/SKILL.md": "b9fd97952dbbff42e0810df4df68cbdec5cbf5b2"
+      },
+      "tracked_custom_skill_paths": [
+        "skills/oscar-quant-optimization/SKILL.md"
+      ],
+      "selected_documents_reviewed": [
+        "AGENTS.md"
+      ],
+      "review_depth": "tree inventory and entry fingerprints; selected relevant sections, not every file or historical commit"
+    },
+    {
+      "commit": "26cf6dc40ee2182903d176a2fea1cfc41ecb579a",
+      "refs": [
+        "refs/heads/backup/pre-bf16-merge-20261027"
+      ],
+      "lesson_focus": "合并前历史备份：解释器能力发现、数值链与 cache checkpoint 保留。",
+      "entry_blob_ids": {
+        "AGENTS.md": "3a0d45dfe72de47e81e1696a4f7478a7cc55ff27",
+        "oscar_ascend_agent_start.md": "8895d0fa2d2648fb0973eaafc656fd79b7d882d4",
+        "skills/oscar-quant-optimization/SKILL.md": "b9fd97952dbbff42e0810df4df68cbdec5cbf5b2"
+      },
+      "tracked_custom_skill_paths": [
+        "skills/oscar-quant-optimization/SKILL.md"
+      ],
+      "selected_documents_reviewed": [
+        "docs/python_environment.md"
+      ],
+      "review_depth": "tree inventory and entry fingerprints; selected relevant sections, not every file or historical commit"
+    },
+    {
+      "commit": "fdb8eba90522bd8942333bc27472bb3e6808649b",
+      "refs": [
+        "refs/heads/checkpoint",
+        "refs/heads/codex/oscar-bf16-attention",
+        "refs/remotes/origin/codex/oscar-bf16-attention",
+        "refs/remotes/origin/data-exchange"
+      ],
+      "lesson_focus": "主 BF16 基底：真实 prefill 状态协议、短长输入性能保护与数值合同；checkpoint/data-exchange 同树别名。",
+      "entry_blob_ids": {
+        "AGENTS.md": "d76a792ca21cb80fc57d16bf3e6cc80d04e84a59",
+        "oscar_ascend_agent_start.md": "45af0cb3b16c60afe335b4f371cb42abff5072b3",
+        "skills/oscar-quant-optimization/SKILL.md": "b9fd97952dbbff42e0810df4df68cbdec5cbf5b2"
+      },
+      "tracked_custom_skill_paths": [
+        "skills/oscar-quant-optimization/SKILL.md"
+      ],
+      "selected_documents_reviewed": [
+        "docs/universal_regression_repair_20261028.md",
+        "docs/gdn_prefill_state_20261028.md",
+        "docs/official_math_v4_20261021.md",
+        "skills/oscar-quant-optimization/references/experiment-template.md"
+      ],
+      "review_depth": "tree inventory and entry fingerprints; selected relevant sections, not every file or historical commit"
+    },
+    {
+      "commit": "59f08592e59a8e1bfa663d1e45f4f64965e97efa",
+      "refs": [
+        "refs/heads/codex/add-offload",
+        "refs/remotes/origin/codex/add-offload"
+      ],
+      "lesson_focus": "Offload 分支：异步所有权、总内存预算、持久化发布、bounded recorder 与故障保码。",
+      "entry_blob_ids": {
+        "AGENTS.md": "d76a792ca21cb80fc57d16bf3e6cc80d04e84a59",
+        "oscar_ascend_agent_start.md": "a931f56c7ea7c1b45b8891e32b4d3adfdfc1699d",
+        "skills/oscar-quant-optimization/SKILL.md": "b9fd97952dbbff42e0810df4df68cbdec5cbf5b2"
+      },
+      "tracked_custom_skill_paths": [
+        "skills/oscar-quant-optimization/SKILL.md"
+      ],
+      "selected_documents_reviewed": [
+        "docs/kv_offload_memcache.md",
+        "docs/offload_guard_incident_20261110.md",
+        "docs/host_shm_startup_20261110.md"
+      ],
+      "review_depth": "tree inventory and entry fingerprints; selected relevant sections, not every file or historical commit"
+    },
+    {
+      "commit": "7047ce36a19e001046a07a7d85de2a4092cd7941",
+      "refs": [
+        "refs/heads/codex/oscar-ascend",
+        "refs/remotes/origin/codex/oscar-ascend"
+      ],
+      "lesson_focus": "基础 Ascend 分支：档案驱动、分层 checklist、候选入口一致性、配对性能因果。",
+      "entry_blob_ids": {
+        "AGENTS.md": "b1488caf9ca94b575af38048329aa862f2f31d2e",
+        "oscar_ascend_agent_start.md": "6757412cfd0841bded71e970b18d8577b5bafff9",
+        "skills/oscar-quant-optimization/SKILL.md": "c69a62450cdbb022c8dd106bfbeefd714941477d"
+      },
+      "tracked_custom_skill_paths": [
+        "skills/oscar-quant-optimization/SKILL.md"
+      ],
+      "selected_documents_reviewed": [
+        "oscar_ascend_agent_start.md",
+        "docs/checklist.md"
+      ],
+      "review_depth": "tree inventory and entry fingerprints; selected relevant sections, not every file or historical commit"
+    },
+    {
+      "commit": "ea46d233e392930aa6b13513f44db9da8335ada2",
+      "refs": [
+        "refs/heads/codex/oscar-bf16-sink1024-recent2048",
+        "refs/remotes/origin/codex/oscar-bf16-sink1024-recent2048"
+      ],
+      "lesson_focus": "固定窗口与质量诊断：评测身份、原评分合同、图观察器覆盖、CPU 并行的阶段边界。",
+      "entry_blob_ids": {
+        "AGENTS.md": "d415bec19a0be5852948e7343b578dd65f8974c8",
+        "oscar_ascend_agent_start.md": "3d225e1835c68d5ef44e915019ccebbd3c6e4bf9",
+        "skills/oscar-quant-optimization/SKILL.md": "b9fd97952dbbff42e0810df4df68cbdec5cbf5b2"
+      },
+      "tracked_custom_skill_paths": [
+        "skills/oscar-quant-optimization/SKILL.md"
+      ],
+      "selected_documents_reviewed": [
+        "docs/service_precision_round_20261105.md",
+        "docs/accuracy_regression_20261031.md",
+        "docs/install_serve_cpu_parallelism.md"
+      ],
+      "review_depth": "tree inventory and entry fingerprints; selected relevant sections, not every file or historical commit"
+    },
+    {
+      "commit": "fb1a507882009f884ea81ae79e213b49d5ded971",
+      "refs": [
+        "refs/heads/codex/oscar-perf-profile",
+        "refs/remotes/origin/codex/oscar-perf-profile"
+      ],
+      "lesson_focus": "独立 profile 分支：从其他分支选择性移植，诊断 clone、混合引擎 ABI、离线统计与性能归因。",
+      "entry_blob_ids": {
+        "AGENTS.md": "d76a792ca21cb80fc57d16bf3e6cc80d04e84a59",
+        "oscar_ascend_agent_start.md": "dbac1039285f41ce16cd723b19eb6013da743898",
+        "skills/oscar-quant-optimization/SKILL.md": "b9fd97952dbbff42e0810df4df68cbdec5cbf5b2"
+      },
+      "tracked_custom_skill_paths": [
+        "skills/oscar-quant-optimization/SKILL.md"
+      ],
+      "selected_documents_reviewed": [
+        "skills/oscar-quant-optimization/SKILL.md",
+        "docs/standalone_perf_profile_20261112.md",
+        "docs/internal_recorder_linkage_20261113.md",
+        "docs/attention_pipeline_breakdown_20261113.md",
+        "docs/longbench_length_stats.md"
+      ],
+      "review_depth": "tree inventory and entry fingerprints; selected relevant sections, not every file or historical commit"
+    },
+    {
+      "commit": "e43819c24eb05419f99f394bf38812df10533790",
+      "refs": [
+        "refs/heads/codex/oscar-sink-recent-sweep",
+        "refs/remotes/origin/codex/oscar-sink-recent-sweep"
+      ],
+      "lesson_focus": "窗口 sweep 分支：owned endpoint、隔离工作目录、完整重复次数、显式 top-k、resume 身份。",
+      "entry_blob_ids": {
+        "AGENTS.md": "656dc6114fe3a911da7d7bfc452822e74c73a791",
+        "oscar_ascend_agent_start.md": "af355953ab77d45d1058777d76764712c730073f",
+        "skills/oscar-quant-optimization/SKILL.md": "b9fd97952dbbff42e0810df4df68cbdec5cbf5b2"
+      },
+      "tracked_custom_skill_paths": [
+        "skills/oscar-quant-optimization/SKILL.md"
+      ],
+      "selected_documents_reviewed": [
+        "docs/sink_recent_sweep.md"
+      ],
+      "review_depth": "tree inventory and entry fingerprints; selected relevant sections, not every file or historical commit"
+    },
+    {
+      "commit": "f96820f154f62686c319edba5ac31e52a20bad4e",
+      "refs": [
+        "refs/remotes/origin/codex/aisbench-stable"
+      ],
+      "lesson_focus": "Stable 分支：启动参数固定、默认与显式 cache 开关、真实 prefill 尾段及 MTP 状态协议。",
+      "entry_blob_ids": {
+        "AGENTS.md": "9f5eaefca6b398476907d5df1063764a19998629",
+        "oscar_ascend_agent_start.md": "f40f15d8de1d82d8403b07ae8baff7225a9ea004",
+        "skills/oscar-quant-optimization/SKILL.md": "9bdc755d06544812f621d87152c7c37897905a0e"
+      },
+      "tracked_custom_skill_paths": [
+        "skills/oscar-quant-optimization/SKILL.md"
+      ],
+      "selected_documents_reviewed": [
+        "docs/aisbench_stable.md"
+      ],
+      "review_depth": "tree inventory and entry fingerprints; selected relevant sections, not every file or historical commit"
+    }
+  ],
+  "limitations": [
+    "Branch names describe source state, not acceptance status.",
+    "Same-name local and origin branches match at this snapshot; local backup branches remain separate historical sources.",
+    "Identical tip commits are deduplicated for content review, not omitted from ref coverage.",
+    "No claim of exhaustive line-by-line audit of repository history, source code, or every document.",
+    "Public export includes original summaries and source identifiers only; machine-local paths and raw evidence are not copied."
+  ]
+}

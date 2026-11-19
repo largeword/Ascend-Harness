@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "name": null,
+  "owner": null,
+  "target": {
+    "soc": null,
+    "physical_devices": [],
+    "service_port": null,
+    "model_path": null,
+    "python_command": "python3",
+    "toolkit_path": null
+  },
+  "integration": {
+    "mode": null,
+    "plugin_root": null,
+    "native_reference_roots": [],
+    "reference_policy": null,
+    "production_oracle_allowed": false
+  },
+  "commands": {
+    "host_test": [],
+    "compile": [],
+    "device_probe": [],
+    "serve": []
+  },
+  "scope": {
+    "authorized_actions": [],
+    "remote_hosts": [],
+    "performance_measurement_authorized": false,
+    "publish_repository": null,
+    "publish_branch": null
+  },
+  "paths": {
+    "logs": "artifacts/logs",
+    "reports": "artifacts/reports",
+    "build": "build/ascend"
+  }
+}

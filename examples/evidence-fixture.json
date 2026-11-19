@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "subject": {
+    "revision": "fixture-only",
+    "scenario": "illustrative schema example; not a measured project result"
+  },
+  "gates": {
+    "source": {"status": "not_run", "artifacts": [], "reason": "Fixture only."},
+    "host": {"status": "pass", "artifacts": ["examples/artifacts/host-fixture.txt"], "reason": "Illustrates a pass record with an existing artifact; this is synthetic and supplies no project validation."},
+    "compile": {"status": "not_run", "artifacts": [], "reason": "Fixture only."},
+    "device": {"status": "blocked", "artifacts": [], "reason": "No device is configured in this example."},
+    "graph_capture": {"status": "not_applicable", "artifacts": [], "reason": "This format-only example executes no graph."},
+    "graph_replay": {"status": "not_applicable", "artifacts": [], "reason": "This format-only example executes no graph."},
+    "quality": {"status": "not_run", "artifacts": [], "reason": "No model quality measurement."},
+    "performance": {"status": "not_run", "artifacts": [], "reason": "No performance measurement."}
+  },
+  "claims": ["host"]
+}

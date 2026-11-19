@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "owner": null,
+  "frozen_before_measurement": false,
+  "contract_revision": null,
+  "required_gates": [],
+  "precision": {
+    "oracle_path": null,
+    "oracle_sha256": null,
+    "reference_dtype": null,
+    "candidate_dtype": null,
+    "atol": null,
+    "rtol": null,
+    "error_metric": null,
+    "special_values_policy": null,
+    "metadata_and_error_domain": "exact",
+    "cases_manifest": null,
+    "allow_posthoc_tolerance_change": false
+  },
+  "graph": {
+    "applicability": null,
+    "stable_addresses_required": null,
+    "capture_and_replay_separate": true,
+    "production_host_sync_allowed": null
+  },
+  "quality": {
+    "dataset_manifest": null,
+    "scorer_revision": null,
+    "metrics": [],
+    "aggregation": null,
+    "allowed_regression_percentage_points": null,
+    "error_record_policy": null
+  },
+  "performance": {
+    "scenarios_manifest": null,
+    "baseline_revision": null,
+    "candidate_revision": null,
+    "repetitions": null,
+    "warmup_iterations": null,
+    "aggregation": null,
+    "minimum_time_reduction_fraction": null,
+    "minimum_speedup_fraction": null,
+    "required_scenarios": [],
+    "timing_scope": null,
+    "instrumentation_identity": null,
+    "frozen_launch_manifest": null
+  }
+}

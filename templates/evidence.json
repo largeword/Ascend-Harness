@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "subject": {
+    "revision": "UNSET",
+    "scenario": "UNSET"
+  },
+  "gates": {
+    "source": {
+      "status": "not_run",
+      "artifacts": [],
+      "applicability": "所有实现改动：边界、引用来源、候选路由和冻结源码检查。",
+      "reason": "尚未执行。"
+    },
+    "host": {
+      "status": "not_run",
+      "artifacts": [],
+      "applicability": "主机单元测试、CPU oracle 或离线解析；不代表设备执行。",
+      "reason": "尚未执行。"
+    },
+    "compile": {
+      "status": "not_run",
+      "artifacts": [],
+      "applicability": "包含本地编译产物的任务；必须绑定源码与工具链身份。",
+      "reason": "尚未执行。"
+    },
+    "device": {
+      "status": "not_run",
+      "artifacts": [],
+      "applicability": "需要真实设备行为的任务；CPU 或仿真证据不能替代。",
+      "reason": "尚未执行。"
+    },
+    "graph_capture": {
+      "status": "not_run",
+      "artifacts": [],
+      "applicability": "使用图模式的任务；记录捕获路径、shape 与地址契约。",
+      "reason": "尚未执行。"
+    },
+    "graph_replay": {
+      "status": "not_run",
+      "artifacts": [],
+      "applicability": "使用图模式的任务；回放及不同输入状态需要独立证据。",
+      "reason": "尚未执行。"
+    },
+    "quality": {
+      "status": "not_run",
+      "artifacts": [],
+      "applicability": "存在模型或业务质量目标的任务；短 probe 不替代完整质量口径。",
+      "reason": "尚未执行。"
+    },
+    "performance": {
+      "status": "not_run",
+      "artifacts": [],
+      "applicability": "声明性能变化的任务；按冻结输入、计时和聚合协议验证。",
+      "reason": "尚未执行。"
+    }
+  },
+  "claims": []
+}
